@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class MainNavbar extends React.Component {
   constructor(props) {
@@ -16,8 +16,8 @@ class MainNavbar extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-dark bg-dark">
-          <a className="navbar-brand" href="#">
+        <nav className='navbar navbar-dark bg-primary'>
+          <a className='navbar-brand' href='#'>
             {/* <img src="https://www.flaticon.com/free-icon/goal_171656" width="30" height="30" className="d-inline-block align-top" alt="" /> */}
             MYGT
           </a>
