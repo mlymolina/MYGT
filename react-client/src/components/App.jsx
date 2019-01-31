@@ -1,15 +1,21 @@
 import React from 'react';
 import Menu from './Menu.jsx';
-import CurrentView from './CurrentView.jsx';
+import ActiveGoals from './ActiveGoals.jsx';
 import MainNavBar from './MainNavbar.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      goals: [],
+      goals: ['Get a job as a Software Engineer','Read 52 books','Get fit'],
       user: 'Emely',
+      currentView: 'active_goals'
     };
+    this.addGoal = this.addGoal.bind(this);
+  }
+
+  addGoal() {
+    console.log('Hello from addGoal');
   }
 
   componentDidMount() {
@@ -19,15 +25,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <MainNavBar />
+        <MainNavBar profile={this.state.user}/>
         <div className='container'>
           <div className='row'>
-            <div className='col-sm-4'>
-              <Menu />
+            <div className='col-sm-8'>
+              <ActiveGoals addGoal={this.addGoal} goals={this.state.goals}/>
             </div>
-              <div className='col-sm-8'>
-              <CurrentView />
-              </div>
           </div> 
         </div>
       </div>

@@ -5,8 +5,9 @@ class Button extends React.Component {
     return(
       <button 
         type='button' 
-        class='btn btn-outline-primary'>
-        Primary
+        className='btn btn-outline-primary'
+        onClick={this.props.addGoal}>
+        Add Goal
       </button>
     );
   }
