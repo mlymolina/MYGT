@@ -2,11 +2,7 @@ import React from 'react';
 import Goal from './Goal.jsx'
 
 
-class GoalList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default class GoalList extends React.Component {
   render() {
     return (
       <ul className='goal-list'>
@@ -18,5 +14,3 @@ class GoalList extends React.Component {
     );
   }
 }
-
-export default GoalList;

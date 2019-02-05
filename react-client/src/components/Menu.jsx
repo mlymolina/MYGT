@@ -1,7 +1,7 @@
 import React from 'react';
 import Profile from './Profile.jsx';
 
-class Menu extends React.Component {
+export default class Menu extends React.Component {
   render() {
     return (
       <div >
@@ -10,5 +10,3 @@ class Menu extends React.Component {
     );
   }
 }
-
-export default Menu;

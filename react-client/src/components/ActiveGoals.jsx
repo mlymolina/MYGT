@@ -2,7 +2,7 @@ import React from 'react';
 import GoalList from './GoalList.jsx';
 import Button from './Button.jsx';
 
-class ActiveGoals extends React.Component {
+export default class ActiveGoals extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -16,5 +16,3 @@ class ActiveGoals extends React.Component {
     );
   }
 }
-
-export default ActiveGoals;

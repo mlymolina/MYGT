@@ -3,7 +3,7 @@ import Menu from './Menu.jsx';
 import ActiveGoals from './ActiveGoals.jsx';
 import MainNavBar from './MainNavbar.jsx';
 
-class App extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,4 +39,3 @@ class App extends React.Component {
 
 }
 
-export default App;
