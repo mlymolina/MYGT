@@ -9,9 +9,9 @@ export default class ActiveGoals extends React.Component {
 
   render() {
     return (
-      <div className='active-goals'>
-        <GoalList goals={this.props.goals}/>
-        <Button addGoal={this.props.addGoal}/>
+      <div className='active-goals-container'>
+        <GoalList className='goal-list-component' goals={this.props.goals}/>
+        <Button className='btn-add-goal-component' addGoal={this.props.addGoal}/>
       </div>
     );
   }

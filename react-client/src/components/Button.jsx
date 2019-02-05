@@ -5,7 +5,7 @@ export default class Button extends React.Component {
     return(
       <button 
         type='button' 
-        className='btn btn-outline-primary'
+        className='btn btn-add-goal btn-outline-primary'
         onClick={this.props.addGoal}>
         Add Goal
       </button>
